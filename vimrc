@@ -58,6 +58,10 @@ map <F5> :!php -l %<CR>
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+" " Custom command area
+
+" "Generate ctags for the project
+command! MakeTags !ctags -R .
 
 " " Fuzzy File search may be achieved with
 " " :vsp **/*<partial file name><tab>
