@@ -1,6 +1,6 @@
 ## Dotfiles
 
-Configuration files based on [this site](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/).
+Symlink script based on [this site](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/).
 
 To use the configuration files just follow the following steps:
 
