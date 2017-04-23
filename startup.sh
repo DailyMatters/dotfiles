@@ -36,6 +36,7 @@ mv composer.phar /usr/local/bin/composer
 ################ Fun and funsies
 apt-get install weechat -y
 apt-get install lynx -y
+apt-get install mutt -y
 
 ############### Update all packages
 apt-get update
