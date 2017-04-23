@@ -19,7 +19,7 @@ apt-get install python-software-properties software-properties-common
 LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 apt-get update
 
-apt-get install php7.0
+apt-get install php7.0 -y
 
 # For composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -29,9 +29,6 @@ php -r "unlink('composer-setup.php');"
 
 # Move it to the path to make it available through the 'Composer' command
 mv composer.phar /usr/local/bin/composer
-
-# For git
-apt-get install git -y
 
 ################ Fun and funsies
 apt-get install weechat -y
