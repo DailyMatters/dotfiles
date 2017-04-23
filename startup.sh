@@ -4,6 +4,7 @@
 # This script will install everything needed to start working on a fresh linux install
 ##############################
 
+echo -en '\E[47;32m'"\033[1mStarting the execution\033[0m"
 
 ############# Updates
 apt-get update
@@ -36,3 +37,5 @@ apt-get install lynx -y
 
 ############### Update all packages
 apt-get update
+
+echo -en '\E[47;32m'"\033[1mScript ended!\033[0m"
