@@ -6,6 +6,9 @@ set showcmd             "show command on bottom bar
 set hlsearch            "highlights search results
 set incsearch           "incremental search
 
+" set tab to 4 spaces
+set tabstop=4
+
 " enable syntax and plugins (for netrw)
 
 syntax enable
