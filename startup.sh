@@ -45,6 +45,12 @@ apt-get install mutt -y
 # apt-get update
 # apt-get install spotify-client
 
+############### Adding git aliases
+git config --global alias.aa "!git add -A && git status"
+git config --global alias.st "status"
+git config --global alias.l "log --oneline --decorate --all --graph"
+git config --global alias.alias "config --get-regexp ^alias\."
+
 ############### Update all packages
 apt-get update
 
