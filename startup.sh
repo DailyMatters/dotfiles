@@ -37,7 +37,6 @@ mv composer.phar /usr/local/bin/composer
 ################ Fun and funsies
 apt-get install weechat -y
 apt-get install lynx -y
-apt-get install mutt -y
 
 ################ For Spotify
 # apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
