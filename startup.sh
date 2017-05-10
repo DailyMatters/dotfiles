@@ -50,6 +50,11 @@ git config --global user.email "claudio.santos.ribeiro@gmail.com"
 git config --global core.editor vim
 git config --global merge.tool vimdiff
 
+git config --global color.auto auto
+git config --global color.branch auto
+git config --global color.interactive auto
+git config --global color.diff auto
+
 ############### Adding git aliases
 git config --global alias.aa "!git add -A && git status"
 git config --global alias.st "status"
