@@ -15,6 +15,7 @@ apt-get install tmux -y
 apt-get install htop -y
 apt-get install exuberant-ctags -y
 apt-get install chromium-browser -y
+apt-get install gitk -y
 
 ############# Working
 
