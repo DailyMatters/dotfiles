@@ -44,6 +44,12 @@ apt-get install lynx -y
 # apt-get update
 # apt-get install spotify-client
 
+############### Adding git configuration
+git config --global user.name "Claudio Ribeiro"
+git config --global user.email "claudio.santos.ribeiro@gmail.com"
+git config --global core.editor vim
+git config --global merge.tool vimdiff
+
 ############### Adding git aliases
 git config --global alias.aa "!git add -A && git status"
 git config --global alias.st "status"
