@@ -15,6 +15,7 @@ apt-get install tmux -y
 apt-get install htop -y
 apt-get install exuberant-ctags -y
 apt-get install chromium-browser -y
+apt-get install gitk -y
 
 ############# Working
 
@@ -54,12 +55,6 @@ git config --global color.auto auto
 git config --global color.branch auto
 git config --global color.interactive auto
 git config --global color.diff auto
-
-############### Adding git aliases
-git config --global alias.aa "!git add -A && git status"
-git config --global alias.st "status"
-git config --global alias.l "log --oneline --decorate --all --graph"
-git config --global alias.alias "config --get-regexp ^alias\."
 
 ############### Update all packages
 apt-get update
