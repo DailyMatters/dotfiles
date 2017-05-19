@@ -21,4 +21,11 @@ sudo ./startup.sh
 ```
 Some of the commands on the script might need a confirmation step, so don't leave the machine unnatended. I will be working on that on a near future.
 
+### gitAlias.sh
+```bash
+chmod +x gitAlias.sh
+sudo ./gitAlias.sh
+```
+This will install all the Git Alias defined on the file. These are my alias, feel free to use them if you want to.
+
 Enjoy ;)

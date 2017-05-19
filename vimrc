@@ -23,7 +23,6 @@ colorscheme desert
 " FILE BROWSING:
 "
 " " Tweaks for browsing
-let g:netrw_banner=0        " disable annoying banner
 let g:netrw_browse_split=4  " open in prior window
 let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " tree view
@@ -52,7 +51,7 @@ au FileType css setl ofu=csscomplete#CompleteCSS
 " ------------------------- Mappings
 
 "Mapping oo to jump to definition usign ctags
-map oo <C-]>
+map 00 <C-]>
 
 " Map F5 to run PHP lint on the file
 map <F5> :!php -l %<CR>
