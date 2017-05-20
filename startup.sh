@@ -10,7 +10,7 @@ echo -en '\E[47;32m'"\033[1mStarting the execution\033[0m"
 apt-get update
 
 ############# Productivity
-apt-get install vim -y
+apt-get install vim-gnome -y
 apt-get install tmux -y
 apt-get install htop -y
 apt-get install exuberant-ctags -y
