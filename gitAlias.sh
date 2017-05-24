@@ -12,6 +12,7 @@ git config --global alias.st status
 git config --global alias.unstage 'reset HEAD --'
 git config --global alias.last 'log -p -1 HEAD'
 git config --global alias.visual "!gitk"
+git config --global alias.rank 'shortlog -sn'
 
 git config --global alias.l "log --oneline --decorate --all --graph"
 git config --global alias.alias "config --get-regexp ^alias\."
