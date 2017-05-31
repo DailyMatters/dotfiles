@@ -29,11 +29,12 @@ cd demo
 composer create-project "symfony/skeleton" api
 cd api
 
+############### Require Recipes
 composer req webserver
 composer req cli
 
-#composer req admin
-#composer req api  #this is fucked!
+#composer req admin     #this is fucked!
+#composer req api       #this is fucked!
 
 echo -en '\E[47;32m'"\033[1mScript ended!\033[0m"
 echo -en '\E[47;32m'"\033[1mMore Information:\033[0m"
