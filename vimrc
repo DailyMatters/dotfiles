@@ -14,9 +14,6 @@ set tabstop=4
 syntax enable
 filetype plugin on              " for netrw (file browsing) run :edit . or :Vex, :Sex, :Vexplore, :Sexplore
 
-" set ctags folder
-set tags=./tags,tags;$HOME
-
 " Set a nicer colorscheme
 colorscheme desert
 
@@ -63,7 +60,9 @@ nnoremap <C-L> :nohl<CR><C-L>
 " " Custom command area
 
 " "Generate ctags for the project
-command! MakeTags !ctags -R .
+"map <F12> :!ctags -R -f ./.git/tags .<CR>
+"set tags=./.git/tags;
+set tags=./tags,tags;
 
 " " Fuzzy File search may be achieved with
 " " :vsp **/*<partial file name><tab>
