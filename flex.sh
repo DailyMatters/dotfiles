@@ -38,3 +38,4 @@ composer req cli
 echo -en '\E[47;32m'"\033[1mScript ended!\033[0m"
 echo -en '\E[47;32m'"\033[1mMore Information:\033[0m"
 echo -en '\E[47;32m'"\033[1mhttps://medium.com/@fabpot/symfony-4-a-quick-demo-da7d32be323\033[0m"
+echo -en '\E[47;32m'"\033[1mhttps://github.com/symfony/flex/\033[0m"
