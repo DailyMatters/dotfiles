@@ -56,6 +56,9 @@ git config --global color.branch auto
 git config --global color.interactive auto
 git config --global color.diff auto
 
+############### Setting up Vundle
+#  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 ############### Update all packages
 apt-get update
 
