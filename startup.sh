@@ -45,6 +45,9 @@ apt-get install lynx -y
 # apt-get update
 # apt-get install spotify-client
 
+chmod +x spotify.sh
+source spotify.sh
+
 ############### Adding git configuration
 git config --global user.name "Claudio Ribeiro"
 git config --global user.email "claudio.santos.ribeiro@gmail.com"
@@ -55,6 +58,9 @@ git config --global color.auto auto
 git config --global color.branch auto
 git config --global color.interactive auto
 git config --global color.diff auto
+
+chmod +x gitAlias.sh
+source gitAlias.sh
 
 ############### Setting up Vundle
 #  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
