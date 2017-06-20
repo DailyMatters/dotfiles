@@ -34,3 +34,5 @@ usermod -aG docker $USER
 
 # Verify if installation is ok
 docker run hello-world
+
+echo "In order for things to work properly, you should reboot your machine right now."
