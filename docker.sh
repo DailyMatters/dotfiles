@@ -28,5 +28,9 @@ add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(
 apt-get update
 apt-get -y install docker docker-compose
 
+# Create a docker group and add your user
+groupadd docker
+usermod -aG docker $USER
+
 # Verify if installation is ok
 docker run hello-world
