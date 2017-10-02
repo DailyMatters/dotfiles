@@ -35,6 +35,16 @@ php -r "unlink('composer-setup.php');"
 # Move it to the path to make it available through the 'Composer' command
 mv composer.phar /usr/local/bin/composer
 
+# Install latest version of phpunit
+wget https://phar.phpunit.de/phpunit-6.1.phar
+chmod +x phpunit-6.1.phar
+mv phpunit-6.1.phar /usr/bin/phpunit
+
+# Install php-c-fixer for better Vim code
+wget http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -O php-cs-fixer
+chmod a+x php-cs-fixer
+mv php-cs-fixer /usr/local/bin/php-cs-fixer
+
 ################ Fun and funsies
 apt-get install weechat -y
 apt-get install lynx -y
@@ -45,8 +55,8 @@ apt-get install lynx -y
 # apt-get update
 # apt-get install spotify-client
 
-chmod +x spotify.sh
-source spotify.sh
+#chmod +x spotify.sh
+#source spotify.sh
 
 ############### Adding git configuration
 git config --global user.name "Claudio Ribeiro"
