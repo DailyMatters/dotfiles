@@ -14,7 +14,6 @@ apt-get install vim-gnome -y
 apt-get install tmux -y
 apt-get install htop -y
 apt-get install exuberant-ctags -y
-apt-get install chromium-browser -y
 apt-get install gitk -y
 
 ############# Working
@@ -40,9 +39,9 @@ php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
 
 # Install latest version of phpunit
-wget https://phar.phpunit.de/phpunit-6.1.phar
-chmod +x phpunit-6.1.phar
-mv phpunit-6.1.phar /usr/bin/phpunit
+wget https://phar.phpunit.de/phpunit-6.5.phar
+$ chmod +x phpunit-6.5.phar
+$ sudo mv phpunit-6.5.phar /usr/local/bin/phpunitv phpunit-6.1.phar /usr/bin/phpunit
 
 # Install php-c-fixer for better Vim code
 wget http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -O php-cs-fixer
@@ -52,15 +51,6 @@ mv php-cs-fixer /usr/local/bin/php-cs-fixer
 ################ Fun and funsies
 apt-get install weechat -y
 apt-get install lynx -y
-
-################ For Spotify
-# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
-# deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
-# apt-get update
-# apt-get install spotify-client
-
-#chmod +x spotify.sh
-#source spotify.sh
 
 ############### Adding git configuration
 git config --global user.name "Claudio Ribeiro"
