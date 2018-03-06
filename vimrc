@@ -4,8 +4,16 @@ filetype plugin on
 set number
 set hlsearch
 set incsearch
-set tabstop=4
 syntax enable
+
+" "Set tabs
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4 
+set noexpandtab
+
+" "Auto indent full file remap
+nnoremap <Leader>ai mmgg=G`m<cr>
 
 set path+=**
 set wildmenu
@@ -35,3 +43,24 @@ map <F6> :!php-cs-fixer fix "%" --rules=@PSR2<CR>
 set backupdir=~/.vim/backup/
 set directory=~/.vim/swap/
 set undodir=~/.vim/undo/
+
+
+" "Mappings for commenting uncommenting (Visual mode only) --> Migrate into
+" "plugin
+function! CommentLineOrBlockOfLines()
+	:s/^/#/
+endfunction
+
+function! UncommentLineOrBlockOfLines()
+	:s/^.//
+endfunction
+
+xnoremap <Leader>cl :call CommentLineOrBlockOfLines()<cr>
+xnoremap <Leader>ul :call UncommentLineOrBlockOfLines()<cr>
+" "End of mappings for commenting uncommenting
+
+" "Launch vimrc like a chump
+nnoremap <Leader>v :e $MYVIMRC<cr>
+
+" "Launch netrw on current working folder
+nnoremap <Leader>+ :e .<cr>
