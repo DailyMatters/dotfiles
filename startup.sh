@@ -41,7 +41,7 @@ mv composer.phar /usr/local/bin/composer
 # Install latest version of phpunit
 wget https://phar.phpunit.de/phpunit-6.5.phar
 $ chmod +x phpunit-6.5.phar
-$ sudo mv phpunit-6.5.phar /usr/local/bin/phpunitv phpunit-6.1.phar /usr/bin/phpunit
+$ sudo mv phpunit-6.5.phar /usr/local/bin/phpunit
 
 # Install php-c-fixer for better Vim code
 wget http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -O php-cs-fixer
