@@ -10,11 +10,19 @@ echo -en '\E[47;32m'"\033[1mStarting the execution\033[0m"
 apt-get update
 
 ############# Productivity
-apt-get install vim-gnome -y
+#apt-get install vim-gnome -y
 apt-get install tmux -y
 apt-get install htop -y
 apt-get install exuberant-ctags -y
 apt-get install gitk -y
+
+## Install Vim 8
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+
+## Install Neovim
+sudo apt-get install nvim
 
 ############# Working
 
