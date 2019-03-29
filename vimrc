@@ -33,6 +33,9 @@ let g:netrw_browse_split=4  " open in prior window
 let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " tree view
 
+" "Launch netrw on current working folder
+nnoremap <Leader>+ :e .<cr>
+
 " "For NerdTree
 
 " "Starts NERDTree when nvim is called without arguments
@@ -47,7 +50,6 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 set tags=./tags,tags;
 
 " "Mapping some Git helpers
-" nnoremap <F1> :! git status<CR>
 nnoremap <F1> :! cd %:h/..; git status<CR>
 nnoremap <F2> :! git diff %<CR>
 nnoremap <F3> :! git add %<CR>
@@ -71,9 +73,6 @@ let g:ale_php_phpcs_standard='phpcs.xml.dist'
 
 " "Launch init.vim like a chump
 nnoremap <Leader>v :e ~/.config/nvim/init.vim<cr>
-
-" "Launch netrw on current working folder
-nnoremap <Leader>+ :e .<cr>
 
 " "Install Vim Plug if not installed
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
