@@ -47,7 +47,8 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 set tags=./tags,tags;
 
 " "Mapping some Git helpers
-nnoremap <F1> :! git status<CR>
+" nnoremap <F1> :! git status<CR>
+nnoremap <F1> :! cd %:h/..; git status<CR>
 nnoremap <F2> :! git diff %<CR>
 nnoremap <F3> :! git add %<CR>
 
